@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Francis Student Space</title>
 
     <style>
@@ -16,7 +18,7 @@
         }
 
         .navbar {
-            background: rgba(255,255,255,0.8);
+            background: rgba(255,255,255,0.9);
             backdrop-filter: blur(10px);
             padding: 20px;
             text-align: center;
@@ -119,18 +121,30 @@
 
 <body>
 
+<!-- NAVIGATION -->
 <div class="navbar">
-    <a href="<?= site_url('student'); ?>">Home</a>
-    <a href="<?= site_url('student/profile'); ?>">Student Profile</a>
+
+    <a href="<?= site_url('student'); ?>">
+        Home
+    </a>
+
+    <a href="<?= site_url('student/profile'); ?>">
+        Student Profile
+    </a>
+
 </div>
 
+
+<!-- HERO -->
 <div class="hero">
 
     <div class="avatar">
         MF
     </div>
 
-    <h1>Welcome to Mark Francis Student Space</h1>
+    <h1>
+        Welcome to Mark Francis Student Space
+    </h1>
 
     <p class="subtitle">
         A personal student information page built with LavaLust.
@@ -143,6 +157,8 @@
 
 </div>
 
+
+<!-- FOOTER -->
 <div class="footer">
     Mark Francis Student Space • Built with LavaLust
 </div>

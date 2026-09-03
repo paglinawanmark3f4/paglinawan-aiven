@@ -17,7 +17,7 @@ class StudentMiddleware
         }
  
         // Show styled Access Denied page
-        $view_path = _DIR_ . '/../views/access_denied.php';
+          $view_path = __DIR__ . '/../views/access_denied.php';
 
         if (file_exists($view_path)) {
             require $view_path;
