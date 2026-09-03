@@ -1,9 +1,11 @@
-
 FROM php:8.2-apache
 
 WORKDIR /var/www/html
 
 COPY . /var/www/html/
+
+# Install MySQL PDO driver
+RUN docker-php-ext-install pdo_mysql
 
 RUN a2enmod rewrite
 
